@@ -1,0 +1,1 @@
+E:\Workspace\SerializationTool\SerializationTool\bin\Debug\SerializationTool.exe.config
