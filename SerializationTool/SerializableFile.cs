@@ -119,6 +119,13 @@ namespace SerializationTool
                         File.WriteAllBytes(newDirectoryPath + @"\" + data.fileName, data.fileData);
                     }
                 }
+                else
+                {
+                    if (data.fileData != null)
+                    {
+                        File.WriteAllBytes(newDirectoryPath + @"\" + data.fileName, data.fileData);
+                    }
+                }
             }
 
             Process.Start(selectedDirectory);
