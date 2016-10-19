@@ -1,12 +1,20 @@
-﻿<Window x:Class="SerializationTool.MainWindow"
+﻿<Controls:MetroWindow  x:Class="SerializationTool.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SerializationTool"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Serialization / Deserialization Tool" Height="218.033" Width="368.169" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize" Background="#FFEEEEEE" Foreground="{x:Null}">
+    <Grid Margin="0,0,0,0" RenderTransformOrigin="0.561,0.466">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="openFileButton" Content="Select folder" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="172" Height="38" Click="openFileButton_Click" FontFamily="Segoe UI" FontSize="12" FontWeight="Normal"/>
+        <Controls:ToggleSwitch x:Name="switcher" Margin="10,10,0,0" OnLabel="Serialization" OffLabel="Deserialization" IsChecked="True" Click="switcher_Click" FontFamily="Segoi UI" FontSize="16"  VerticalAlignment="Top"  HorizontalAlignment="Left" Width="183"/>
+        <Label x:Name="label" Content="Status:" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="statusLabel" HorizontalAlignment="Left" Margin="71,94,0,0" VerticalAlignment="Top" FontSize="18" Height="44" Width="143" FontWeight="Bold"/>
     </Grid>
-</Window>
+</Controls:MetroWindow>
